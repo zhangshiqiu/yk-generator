@@ -1,6 +1,6 @@
 {
   "name": "yk-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "create yk express ",
   "main": "bin/yk",
   "directories": {
