@@ -1,0 +1,28 @@
+{
+  "name": "yk-generator",
+  "version": "1.0.1",
+  "description": "create yk express ",
+  "main": "bin/yk",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "bin": {
+    "yk": "./bin/yk"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "mkdirp": "^0.5.1",
+    "readline": "^1.3.0",
+    "sorted-object": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "zsq",
+  "license": "ISC"
+}
