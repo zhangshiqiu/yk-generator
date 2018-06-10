@@ -37,6 +37,10 @@ loader(app,{
     routesDir: process.dir+'/routes'
 });
 
+app.on('error', async (err, ctx) => {
+    console.log(err);
+});
+
 
 
 
