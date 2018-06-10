@@ -157,7 +157,7 @@ function createApplication(app_name, path) {
       copy_template('js/loader/index.js',path+'/loader/index.js');
       copy_template('js/loader/loader.js',path+'/loader/loader.js');
       copy_template('js/loader/convert.js',path+'/loader/convert.js');
-      copy_template('js/loader/validate_param.js',path+'/loader/validate_param.js');
+      copy_template('js/loader/param.js',path+'/loader/param.js');
       complete();
     });
 

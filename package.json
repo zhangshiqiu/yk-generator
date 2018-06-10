@@ -1,14 +1,15 @@
 {
   "name": "yk-generator",
-  "version": "1.0.2",
-  "description": "create yk express ",
+  "version": "1.0.3",
+  "description": "create yk express or create yk-koa koa2 ",
   "main": "bin/yk",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
   "bin": {
-    "yk": "./bin/yk"
+    "yk": "./bin/yk",
+    "yk-koa": "./bin/koa2"
   },
   "dependencies": {
     "commander": "^2.15.1",
@@ -25,7 +26,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "express"
+    "express",
+    "koa2"
   ],
   "author": "zsq",
   "license": "ISC"
