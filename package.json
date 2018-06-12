@@ -1,6 +1,6 @@
 {
   "name": "yk-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "create yk express or create yk-koa koa2 ",
   "main": "bin/yk",
   "directories": {
