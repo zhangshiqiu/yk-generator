@@ -22,26 +22,16 @@ app.use(koaStatic(path.join(process.dir,'public')));
 app.use(views(__dirname+'/view',{ extension: 'html' }));
 
 app.use(logger(':date[iso] :remote-addr :remote-user :method :url :status :response-time ms - :res[content-length]'));
-app.use(async (ctx,next) => {
-    await next();
-    switch (ctx.status) {
-        case 404:
-            await ctx.render('404');
-            break;
-        case 500:
-            await ctx.render('error');
-            break;
+app.use(async (ctx,next) => { //里面抛出异常捕获
+    try{
+      await next();
+    }catch (err){
+     console.log(err);
     }
 });
 loader(app,{
     routesDir: process.dir+'/routes'
 });
-
-app.on('error', async (err, ctx) => {
-    console.log(err);
-});
-
-
 
 
 
